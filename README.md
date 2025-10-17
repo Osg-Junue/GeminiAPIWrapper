@@ -111,7 +111,6 @@ var options = new GenerativeLanguageOptions
 - **`GeminiRequest`**: リクエストの詳細を構成するクラス
 - **`GeminiResponse`**: API からの応答を表すクラス
 - **`GenerativeLanguageOptions`**: Google AI Studio 用の設定
-- **`VertexAIOptions`**: Vertex AI 用の設定
 
 ## 拡張メソッド
 
