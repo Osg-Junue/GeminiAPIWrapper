@@ -129,6 +129,7 @@ FunctionCall? functionCall = response.GetFunctionCall();
 ## 詳細
 
 ResponseSchemaやFunctionCallの利用については以下の記事で解説しています。
+
 https://osg.junue.net/articles/geminiapiwrapper/
 
 ## ライセンス
