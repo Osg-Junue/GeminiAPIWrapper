@@ -126,6 +126,11 @@ string? text = response.GetText();
 FunctionCall? functionCall = response.GetFunctionCall();
 ```
 
+## 詳細
+
+ResponseSchemaやFunctionCallの利用については以下の記事で解説しています。
+https://osg.junue.net/articles/geminiapiwrapper/
+
 ## ライセンス
 
 このプロジェクトは MIT ライセンスの下で公開されています。
@@ -137,4 +142,5 @@ FunctionCall? functionCall = response.GetFunctionCall();
 ## 作者
 
 Name: Osg-Junue
+
 Blog: https://osg.junue.net/
