@@ -16,8 +16,11 @@ Gemini API を簡単に利用するための .NET ラッパーライブラリで
 
 ## インストール
 
-まだ対応していない。
-近いうちにnugetに登録予定。
+以下のコマンドでインストールできます。
+
+```plaintext
+dotnet add package GeminiAPIWrapper
+```
 
 ## Quick Start
 
