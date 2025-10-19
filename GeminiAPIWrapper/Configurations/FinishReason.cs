@@ -6,7 +6,7 @@ namespace GeminiAPIWrapper.Configurations
     /// 生成停止理由。
     /// 参考: https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/inference?hl=ja#response-body
     /// </summary>
-    [JsonConverter(typeof(JsonStringEnumConverter))]
+    [JsonConverter(typeof(JsonStringEnumConverter<FinishReason>))]
     public enum FinishReason
     {
         /// <summary>

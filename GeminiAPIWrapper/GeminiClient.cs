@@ -66,26 +66,6 @@ internal class GeminiClient : IGeminiClient, IDisposable
             DefaultRequestHeaders = { { keyHeader, apiKey } },
         };
     }
-
-    /// <summary>
-    /// Vertex AI (トークン認可方式) 用コンストラクタ。
-    /// </summary>
-    /// <param name="options">エンドポイント、認可トークン、ヘッダー名、Content-Type を含むオプション。</param>
-    /// <exception cref="ArgumentNullException">必須オプションが <c>null</c> の場合。</exception>
-    public GeminiClient(VertexAIOptions options)
-    {
-        _endpointBase = options.EndpointBase ?? throw new ArgumentNullException(options.EndpointBase);
-        _contentType = options.ContentType ?? throw new ArgumentNullException(options.ContentType);
-
-        var authHeader = options.AuthHeader ?? throw new ArgumentNullException(options.AuthHeader);
-        var authToken = options.AuthToken ?? throw new ArgumentNullException(options.AuthToken);
-
-        _httpClient = new HttpClient
-        {
-            BaseAddress = new Uri(_endpointBase),
-            DefaultRequestHeaders = { { authHeader, authToken } },
-        };
-    }
     #endregion
 
     #region Public Methods
