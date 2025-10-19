@@ -1,5 +1,4 @@
 ﻿using GeminiAPIWrapper.Attributes;
-using Refit;
 
 namespace GeminiAPIWrapper;
 
