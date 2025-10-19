@@ -111,7 +111,6 @@ var options = new GenerativeLanguageOptions
 - **`GeminiRequest`**: リクエストの詳細を構成するクラス
 - **`GeminiResponse`**: API からの応答を表すクラス
 - **`GenerativeLanguageOptions`**: Google AI Studio 用の設定
-- **`VertexAIOptions`**: Vertex AI 用の設定
 
 ## 拡張メソッド
 
@@ -127,6 +126,12 @@ string? text = response.GetText();
 FunctionCall? functionCall = response.GetFunctionCall();
 ```
 
+## 詳細
+
+ResponseSchemaやFunctionCallの利用については以下の記事で解説しています。
+
+https://osg.junue.net/articles/geminiapiwrapper/
+
 ## ライセンス
 
 このプロジェクトは MIT ライセンスの下で公開されています。
@@ -138,4 +143,5 @@ FunctionCall? functionCall = response.GetFunctionCall();
 ## 作者
 
 Name: Osg-Junue
+
 Blog: https://osg.junue.net/
