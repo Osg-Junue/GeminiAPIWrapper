@@ -95,7 +95,7 @@ namespace GeminiAPIWrapper.Configurations
         /// </summary>
         [JsonPropertyName("responseSchema")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public ResponseSchema? ResponseSchema { get; set; }
+        public Schema? ResponseSchema { get; set; }
 
         /// <summary>
         /// 【任意】思考（reasoning）設定（対応モデルのみ）。

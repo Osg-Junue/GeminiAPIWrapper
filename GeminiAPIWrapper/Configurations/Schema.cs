@@ -48,7 +48,7 @@ public sealed class Schema
     /// </summary>
     [JsonPropertyName("properties")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public Dictionary<string, ResponseSchema>? Properties { get; set; }
+    public Dictionary<string, Schema>? Properties { get; set; }
 
     /// <summary>
     /// 【Object の場合】必須プロパティ名。
@@ -62,6 +62,6 @@ public sealed class Schema
     /// </summary>
     [JsonPropertyName("items")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public ResponseSchema? Items { get; set; }
+    public Schema? Items { get; set; }
 
 }
